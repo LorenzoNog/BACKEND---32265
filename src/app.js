@@ -3,7 +3,7 @@ const app = express()
 const products = require('../products.json')
 
 app.get('/',(req,res)=>{
-    res.sendFile('C:/Users/loren/OneDrive/Escritorio/Backend/Entregable2/app.js')
+    res.sendFile('C:/Users/loren/OneDrive/Escritorio/Backend/backend/src/app.js')
 })
 
 app.get('/products',(req,res)=>{
@@ -22,10 +22,10 @@ app.get('/products/:productId',(req,res)=>{
     if(product){
         res.json({product})
     }else{
-        console.log('ID del producto no encontrado')
+        res.json({Error:'Id del producto no encontrado'})
     }
 })
 
-app.listen(2022,()=>{
-    console.log('messi')
+app.listen(8080,()=>{
+    console.log('Corriendo en el puerto 8080')
 })

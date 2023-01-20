@@ -68,14 +68,14 @@ class ProductManager{
     }
 }
 const Manager = new ProductManager('products.json')
-/* const product4 = {
-    title:'AirPods max',
-    description:'Auriculares',
-    price:'700',
-    thumbnail:'imagen',
-    stock:'30'
+/* const producto10 = {
+    title:"samsung galaxy S22",
+        description:"Celular",
+        price:"600",
+        thumbnail:"imagen",
+        stock:"50"
 }
-Manager.addProducts(product4) */
+Manager.addProducts(producto10) */
 /* async function prueba(){
     const ronaldo = await messi.deleteProduct(2)
     return console.log(ronaldo)
